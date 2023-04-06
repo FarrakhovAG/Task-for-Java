@@ -1,0 +1,12 @@
+public class Solution {
+    public static void main(String[] args) {
+        String packagePath = "java.util.stream";                
+        String[] tokens = getTokens(packagePath, "\\.");
+        System.out.println(Arrays.toString(tokens));
+    }
+
+    public static String[] getTokens(String query, String delimiter) {
+        StringTokenizer tokenizer = new StringTokenizer(query,delimiter);
+        String[] strings = query.split(delimiter);
+            return strings;
+    }}
